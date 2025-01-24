@@ -730,6 +730,38 @@ span {
   }
 }
 
+.success-message {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { top: -50px; opacity: 0; }
+  to { top: 20px; opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .success-message {
+    width: 90%;
+    text-align: center;
+    padding: 10px 15px;
+  }
+}
+
+
+
+
+
 /* @media(max-width: 1285px) {
   .header {
     padding: 4rem 5%;
