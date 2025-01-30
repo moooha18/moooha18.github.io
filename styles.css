@@ -290,115 +290,114 @@ span {
 }
 
 .heading {
-    font-size: 8rem;
-    text-align: center;
-    margin: 5rem 0;
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
 }
 
 .educaiton {
-    padding: 100px 15px;
-    background: var(--second-bg-color);
+  padding: 100px 15px;
+  background: var(--second-bg-color);
 }
 
 .education h2 {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .timeline-items {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .timeline-items::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background: var(--main-color);
-    left: calc(50% - 1px);
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: var(--main-color);
+  left: calc(50% - 1px);
 }
 
 .timeline-item {
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
 }
 
 .timeline-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .timeline-item:nth-child(odd) {
-    padding-right: calc(50% + 30px);
-    text-align: right;
+  padding-right: calc(50% + 30px);
+  text-align: right;
 }
 
 .timeline-item:nth-child(even) {
-    padding-left: calc(50% + 30px);
+  padding-left: calc(50% + 30px);
 }
 
 .timeline-dot {
-    height: 21px;
-    width: 21px;
-    background: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
+  height: 21px;
+  width: 21px;
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
 }
 
 .timeline-date {
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    margin: 6px 0 15px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin: 6px 0 15px;
 }
 
 .timeline-content {
-    background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
-    padding: 30px 50px;
-    border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .timeline-content:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
 }
 
 .timeline-content h3 {
-    font-size: 20px;
-    color: white;
-    margin: 0 0 10px;
-    font-weight: 500;
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  font-weight: 500;
 }
 
 .timeline-content p {
-    font-size: 16px;
-    color: white;
-    font-weight: 300;
-    line-height: 22px;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--bg-color);
-    width: 50px;
+  background-color: var(--bg-color);
+  width: 50px;
 }
 
 .services {
@@ -421,6 +420,8 @@ span {
 .service-box {
   background-color: var(--main-color);
   height: 300px;
+  min-height: 300px;
+  height: auto;
   border-radius: 3rem;
   border: 5px solid transparent;
   cursor: pointer;
@@ -446,13 +447,13 @@ span {
   max-height: 200px;
   justify-content: left;
   align-items: baseline;
-  padding: 5rem 5rem;
+  padding: 3rem 3rem;
 }
 
 .service-info h4 {
-  font-size: 3rem;
   font-weight: 800;
-  line-height: 2;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 .service-info p {
@@ -461,6 +462,9 @@ span {
   max-height: 100px;
   line-height: 1.7;
   margin: auto;
+  overflow: visible;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .testimonials {
@@ -513,7 +517,7 @@ span {
 
 .testimonial-item:hover {
   border: 3px solid var(--main-color);
-  transform: translateY(-10px)scale(1.03);
+  transform: translateY(-10px) scale(1.03);
   box-shadow: 0 0 50px var(--main-color);
 }
 
@@ -601,7 +605,7 @@ span {
 }
 
 .footer .social a:hover {
-  transform: scale(1.2)translateY(-10px);
+  transform: scale(1.2) translateY(-10px);
   background-color: var(--main-color);
   color: black;
   box-shadow: 0 0 25px var(--main-color);
@@ -638,7 +642,7 @@ span {
   color: white;
 }
 
-@media(max-width: 1285px) {
+@media (max-width: 1285px) {
   html {
     font-size: 55%;
   }
@@ -649,7 +653,7 @@ span {
   }
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   header {
     padding: 2rem 3%;
   }
@@ -684,7 +688,7 @@ span {
   }
 }
 
-@media(max-width: 895px) {
+@media (max-width: 895px) {
   #menu-icon {
     display: block;
   }
@@ -733,6 +737,33 @@ span {
   }
   .services-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-box {
+    min-height: auto;
+    height: auto;
+  }
+
+  .service-box .service-info {
+    padding: 2rem;
+  }
+
+  .service-info h4 {
+    font-size: 2.2rem;
+  }
+
+  .service-info p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-info h4 {
+    font-size: 2rem;
+  }
+
+  .service-info p {
+    font-size: 1.2rem;
   }
 }
 
@@ -802,298 +833,129 @@ span {
     grid-template-columns: 1fr;
     gap: 5rem;
   }
-  
+
   .contact-box {
     padding: 4rem 2rem;
   }
 }
 
-
-
-/* @media(max-width: 1285px) {
-  .header {
-    padding: 4rem 5%;
-  }
-  .navbar a {
-    margin-left: 2rem;
-  }
-  #menu-icon {
-    display: block;
-  }
-  .home {
-    flex-direction: column;
-    gap: 5rem;
-  }
-  .home-content {
-    text-align: center;
-    align-items: center;
-  }
-  .home-content h3 {
-    font-size: 2.5rem;
-  }
-  .home-content h1 {
-    font-size: 4.5rem;
-  }
-  .home-img img {
-    width: 50vw;
-  }
-  .text-animation {
-    font-size: 24px;
-  }
-  .services-container {
-    grid-template-columns: 1fr;
-    padding-bottom: 5rem;
-  }
-  .service-box {
-    height: 250px;
-  }
-  .service-box .service-info {
-    padding: 3rem 3rem;
-  }
-  .testimonial-item {
-    min-height: 450px;
-    padding: 30px 40px;
-  }
-  .testimonial-item h2 {
-    font-size: 2.5rem;
-  }
-  .testimonial-item p {
-    font-size: 1.2rem;
-  }
-  .contact form {
-    flex-direction: column;
-  }
-  .contact form .input-box {
-    flex-direction: column;
-  }
-  .contact form .input-box input,
-  .contact form textarea {
-    width: 100%;
-  }
-
+.skills {
+  background: var(--second-bg-color);
+  padding: 10rem 12% 10rem;
 }
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+}
 
-@media (max-wdth: 991px) {
-  .header {
-    padding: 4rem 5%;
-  }
-  .navbar a {
-    margin-left: 2rem;
-  }
-  #menu-icon {
-    display: block;
-  }
-  .home {
-    flex-direction: column;
-    gap: 5rem;
-  }
-  .home-content {
-    text-align: center;
-    align-items: center;
-  }
-  .home-content h3 {
-    font-size: 2.5rem;
-  }
-  .home-content h1 {
-    font-size: 4.5rem;
-  }
-  .home-img img {
-    width: 50vw;
-  }
-  .text-animation {
-    font-size: 24px;
-  }
-  .services-container {
-    grid-template-columns: 1fr;
-    padding-bottom: 5rem;
-  }
-  .service-box {
-    height: 250px;
-  }
-  .service-box .service-info {
-    padding: 3rem 3rem;
-  }
-  .testimonial-item {
-    min-height: 450px;
-    padding: 30px 40px;
-  }
-  .testimonial-item h2 {
-    font-size: 2.5rem;
-  }
-  .testimonial-item p {
-    font-size: 1.2rem;
-  }
-  .contact form {
-    flex-direction: column;
-  }
-  .contact form .input-box {
-    flex-direction: column;
-  }
-  .contact form .input-box input,
-  .contact form textarea {
-    width: 100%;
-  }
+.skill-box {
+  background: var(--bg-color);
+  border: 3px solid var(--main-color);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.skill-box i {
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+}
+
+.skill-box h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.skill-box p {
+  font-size: 1.6rem;
+  color: #ccc;
+}
+
+.languages {
+  background: var(--bg-color);
+  padding: 10rem 12% 10rem;
+}
+
+.languages-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.language-box {
+  background: var(--second-bg-color);
+  border: 3px solid var(--main-color);
+  border-radius: 2rem;
+  padding: 3rem;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.language-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.language-box i {
+  font-size: 3.5rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+}
+
+.language-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.language-box p {
+  font-size: 1.6rem;
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 4rem 5%;
-  }
-  .navbar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 4rem 5%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    z-index: 5;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
-  }
-  .navbar.active {
-    top: 0;
-  }
-  .navbar a {
-    margin-left: 0;
-  }
-  #menu-icon {
-    display: block;
-  }
   .home {
-    flex-direction: column;
-    gap: 5rem;
+    padding: 8rem 5% 3rem;
   }
-  .home-content {
-    text-align: center;
-    align-items: center;
-  }
-  .home-content h3 {
-    font-size: 2.5rem;
-  }
+
   .home-content h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.3rem;
+  }
+
   .home-img img {
-    width: 50vw;
+    width: 60vw;
   }
+
   .text-animation {
-    font-size: 24px;
+    font-size: 1.8rem;
   }
-  .services-container {
+
+  .skills-container {
     grid-template-columns: 1fr;
-    padding-bottom: 5rem;
   }
-  .service-box {
-    height: 250px;
-  }
-  .service-box .service-info {
-    padding: 3rem 3rem;
-  }
-  .testimonial-item {
-    min-height: 450px;
-    padding: 30px 40px;
-  }
-  .testimonial-item h2 {
-    font-size: 2.5rem;
-  }
-  .testimonial-item p {
-    font-size: 1.2rem;
-  }
-  .contact form {
-    flex-direction: column;
-  }
-  .contact form .input-box {
-    flex-direction: column;
-  }
-  .contact form .input-box input,
-  .contact form textarea {
+
+  .language-box {
     width: 100%;
+    max-width: 300px;
   }
 }
-
-@media (max-width: 500px) {
-  .header {
-    padding: 4rem 5%;
-  }
-  .navbar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 4rem 5%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    z-index: 5;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
-  }
-  .navbar.active {
-    top: 0;
-  }
-  .navbar a {
-    margin-left: 0;
-  }
-  #menu-icon {
-    display: block;
-  }
-  .home {
-    flex-direction: column;
-    gap: 5rem;
-  }
-  .home-content {
-    text-align: center;
-    align-items: center;
-  }
-  .home-content h3 {
-    font-size: 2.5rem;
-  }
-  .home-content h1 {
-    font-size: 4.5rem;
-  }
-  .home-img img {
-    width: 50vw;
-  }
-  .text-animation {
-    font-size: 24px;
-  }
-  .services-container {
-    grid-template-columns: 1fr;
-    padding-bottom: 5rem;
-  }
-  .service-box {
-    height: 250px;
-  }
-  .service-box .service-info {
-    padding: 3rem 3rem;
-  }
-  .testimonial-item {
-    min-height: 450px;
-    padding: 30px 40px;
-  }
-  .testimonial-item h2 {
-    font-size: 2.5rem;
-  }
-  .testimonial-item p {
-    font-size: 1.2rem;
-  }
-  .contact form {
-    flex-direction: column;
-  }
-  .contact form .input-box {
-    flex-direction: column;
-  }
-  .contact form .input-box input,
-  .contact form textarea {
-    width: 100%;
-  }
-} */
